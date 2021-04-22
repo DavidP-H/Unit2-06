@@ -5,23 +5,53 @@
   <meta name="description" content="My first webpage, with colour">
   <meta name="viewport" content="width=device-width">
   <meta name="author" content="David Hart">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200&display=swap" rel="stylesheet">
   <style> body {background-color: #ffe8d6;} 
-  h1 {
+  #myHeader {
     color: black;
-    font-family: Courier New;
+    font-family: 'Lobster', cursive;
     font-size: 400%;
   }
-  p {
+  #quote {
     color: #6b705c;
-    font-family: Georgia;
-    font-size: 150%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+  }
+  #table {
+    border: 1px solid black;
+  }
+  #image {
+    border: 2px solid black;
   }
   </style>
   <title>My first webpage, with colour.</title>
  </head>
  <body>
-  <h1>Generic Heading</h1>
-  <img src="/images/bee.jpg" alt="Bee pollinating flower">
-  <p>According to all <sup>known</sup> laws of aviation, there is no way that a bee should be able to fly. Its wings are too small to get its fat little body off the ground. <br> The bee, of course, flies <i>anyway</i> because bees <b>don't</b> care what humans think is impossible.</p>
+  <h1 id="myHeader">Bees are cool</h1>
+  <img src="/images/bee.jpg" alt="Bee pollinating flower" height="10%" width="10%" id="image">
+  <p id="quote"><q>Ladies and Gentlemen of the jury, there's no trickery here. I'm just an ordinary bee. And as a bee, honey's pretty important to me. It's important to all bees. We invented it, we make it, and we protect it with our lives. Unfortunately, there are some people in this room who think they can take whatever they want from us 'cause we're the little guys. And what I'm hoping is that after this is all over, you'll see how by taking our honey, you're not only taking away everything we have, but everything we are.</q>-Barry B. Benson</p>
+  <table id="table">
+    <tr>
+      <th>Name</th>
+      <th>Species</th>
+      <th>Gender</th>
+      <th>Occupation</th>
+      <th>Voice Actor</th>
+    </tr>
+    <tr>
+      <th>Barry B. Benson</th>
+      <th>Bee</th>
+      <th>Male</th>
+      <th>Hive worker, Pollen Jock, Lawyer</th>
+      <th>Jerry Seinfeld</th>
+    </tr>
+    <tr>
+      <th>Adam Flayman</th>
+      <th>Bee</th>
+      <th>Male</th>
+      <th>Krelman operator</th>
+      <th>Matthew Broderick</th>
+    </tr>
+  </table>
  </body>
 </html>
